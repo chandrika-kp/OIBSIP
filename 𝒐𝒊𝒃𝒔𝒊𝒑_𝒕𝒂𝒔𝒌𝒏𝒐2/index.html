@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Portfolio</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <main class='main'>
+    <nav class='navBar'>
+      <h1>Portfolio</h1>
+      <div class='navigationMenu'>
+        <a href="#aboutMe">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contactForm">Let's Connect!</a>
+        <div>
+    </nav>
+    <section class='heroSection'>
+      <img class='profileImage' src='./src/profile.png'>
+      <div class='herosectionDetails'>
+        <h1>Poorna Chandrika Konathala</h1>
+        <h3>Web Developer at Oasis Infobyte</h3>
+      </div>
+    </section>
+    <section class='aboutMe' id='aboutMe'>
+      <h1>About me</h1>
+      <p>I’m a talented, ambitious, and self-motivated frontend developer and and useful skills ranging from
+        self-discipline, teamwork, and the ability to work with minimum supervision.<br>
+        I'm capable of playing a key front-end role with intermediate knowledge of core front-end technologies,
+        frameworks, and libraries.<br>
+        I have done one month internship in Internship alerts as a web developer intern and having experience in
+        creating webpages.</p>
+    </section>
+    <section class='skillsAndProjects'>
+      <div class='skills' id='skills'>
+        <h1 class='cardHeading'>Skills</h1>
+        <img title='HTML' src='./src/html.png'>
+        <img title='CSS' src='./src/css.png'>
+        <img title='Javascript' src='./src/js.png'>
+        <img title='python' src='./src/py.png'>
+        <img title='vscode' src='./src/visual-studio-code-2019.png'>
+        <img title='github' src='./src/githup.png'>
+        <img title='pycharm' src='./src/pycharm.png'>
+
+      </div>
+      <div class='projects' id='projects'>
+        <h1 class='cardHeading'>Projects</h1>
+        <div class='projectContainer'>
+          <img src='./src/html.png' />
+          <img src='./src/css.png' />
+          <div class='projectDescription'>
+            <h4>Online course website</h4>
+            <p>complete online free courses website designed using html5 and css3.</p>
+          </div>
+        </div>
+        <div class='projectContainer'>
+          <img src='./src/html.png' />
+          <img src='./src/css.png' />
+          <img src='./src/js.png' />
+          <div class='projectDescription'>
+            <h4>Tic-Tac-Toe</h4>
+            <p>creatated tic-tac-toe game using html,css and javaScript</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class='contactForm' id='contactForm'>
+      <h1>Let's Connect!</h2>
+        <div class='formGroup'>
+          <label for='name'>Enter Full Name</label><br />
+          <input type='text' id='name' placeholder='Full Name' />
+        </div>
+        <div class='formGroup'>
+          <label for='email'>Email</label><br />
+          <input type='text' id='email' placeholder='Email' />
+        </div>
+        <div class='formGroup'>
+          <label for='message'>Message</label><br />
+          <textarea placeholder="Send some message!" id="message" name="w3review" rows="4" cols="50"></textarea>
+        </div>
+        <button class='submitButton' onClick={submit()}>Connect</button>
+    </section>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Temperature</title>
+</head>
+<body>
+  <div class="container">
+    <div class="innerbox">
+      <h1>Temperature Converter</h1>
+      <div class="box">
+        
+        <div class="degrees">
+          <label for="Degrees">Degrees</label><br>
+          <input id="input" type="number" value=" ">
+        </div>
+        <div class="type">  
+          <label for="Type">Type</label><br>
+          <select name="conversions" id="convert" onchange="select1(event)">
+            <option id="select" value="select">--select--</option>
+            <option id="Celsius_to" value="Celsius">Celsius</option>
+            <option id="Fahrenheit_to" value="Fahrenheit">Fahrenheit</option>
+            <option id="Kelvin_to" value="Kelvin">Kelvin</option>
+          </select>
+  
+        </div>
+      </div>
+      
+      <div class="result" id="result">
+        <label for="">Result</label><br>
+        <input id="result1" type="text" value=" " >
+        <input id="result2" type="text" value=" " >
+        
+      </div>
+
+      <div class="btn">
+
+        <button id="btn" onclick="finalcal()">Convert</button>
+        <button id="clear" onclick="clear1()">Clear</button>
+
+      </div>
+      
+    </div>
+  <footer> © CHANDRIKA</footer>
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <title>Watch Landing Page</title>
+</head>
+<body>
+ <nav>
+   <div class="logo">WatchBox</div>
+   <!-- toggle menu button -->
+   <span class="menubtn" onclick="openNav()">&#9776;</span>
+ 
+   <div class="navLinks">
+     <ul>
+       <li><a href="#">Home</a></li>
+       <li><a href="#">Brands</a></li>
+       <li><a href="#">New Arrivals</a></li>
+       <li><a href="#">Contact</a></li>
+       <li><a href="#">sign in</a></li>
+       <button type="button">Login</button>
+     </ul>
+   </div>
+ </nav>
+   <!-- responsive side navbar -->
+   <div class="sideNav" id="sidenav">
+     <a href="#" class="closeBtn" onclick="closeNav()"> &#10006;</a>
+     <a href="#">Home</a>
+     <a href="#">Brands</a>
+     <a href="#">New Arrivals</a>
+     <a href="#">Contact</a>
+     <a href="#"><button type="button">Login</button> </a>
+   </div>
+  
+   <!-- Header content with banner image -->
+   <div class="row">
+     <div class="column1">
+       <h1>WatchBox</h1>
+       <p>Punctuate your collection with a timepiece that pulls it all together.</p>
+       <button onclick="myfunction()">Shop Now</button>
+     </div>
+     <div class="column2">
+       <img src="1.jpg" alt="banner" width="500px">
+     </div>
+   </div>
+
+
+  <section>
+    <div class="content">
+      <p>WatchBox is home to the greatest collection of pre-owned luxury watches, all certified as authentic and Collector Quality.</p>
+    </div>
+    <div class="newOnes">
+      <h1>Just In</h1>
+      <div class="newwatch">
+        <div class="newwatchImg">
+          <img src="https://watchbox-sfcc.imgix.net/home/3rd-mod/Collector+Cornerstones+Third+Mod_v3.jpg?auto=format,compress&cs=srgb&usm=5&usmrad=5&vib=5&h=450" alt="">
+        </div>
+
+        <div class="newwatchDetails">
+          <h2>Vacheron Constantin Overseas</h2>
+          <p>A collection at the intersection of versatility and comfort.</p>
+          <button onclick="myfunction()">Shop Now</button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <footer class="footer">
+    <ul>
+    <li><i class="fa-sharp fa-solid fa-phone"></i>&nbsp;Call us</li>
+    <li><i class="fa-brands fa-mail-reply"></i>&nbsp; Email</li>
+    <li><i class="fa-brands fa-whatsapp"></i>&nbsp;Chat with us</li>
+    </ul>
+  </footer>
+   
+   <!-- javascript to make side menu appear -->
+ <!-- <script>
+   function openNav() {
+     document.getElementById("sidenav").style.width = "50%";
+   }
+   function closeNav() {
+     document.getElementById("sidenav").style.width = "0%";
+   }
+ </script>
+  -->
+  <script src="script.js"></script>
+</body>
+</html>
